@@ -17,4 +17,6 @@ class ArticleController extends AbstractController
     {                 
         return $this->json($articleRepository->findAll(), 200, [], ['groups' => 'article:read']);
     }
+
+    public function addArticle() {} 
 }
